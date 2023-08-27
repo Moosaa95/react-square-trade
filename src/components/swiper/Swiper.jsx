@@ -5,30 +5,39 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/scrollbar";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-import moringa from "../../assets/img/square-trade-moringa.jpg";
-import Tin from "../../assets/img/Square-trade-tin.jpg";
-import TigerNuts from "../../assets/img/square-trade-tiger-nuts.jpeg";
-import StoneFlower from "../../assets/img/square-trade-stone-flower.jpg";
-import Habiscus from "../../assets/img/square-trade-dried-habiscus.jpg";
 
-const Swipers = () => {
-  const slider_images = [moringa, Tin, TigerNuts, StoneFlower, Habiscus];
+const Swipers = ({ title, slider_image }) => {
+    const [currentImageTitle, setCurrentImageTitle] = React.useState(
+        slider_image[0]?.title || ""
+      );
+    
+      const handleSlideChange = (swiper) => {
+        console.log(swiper, 'swiper');
+        const activeSlideIndex = swiper.activeIndex;
+        const activeSlide = slider_image[activeSlideIndex];
+        console.log(activeSlide, activeSlideIndex)
+        setCurrentImageTitle(activeSlide?.title || "");
+      };
   return (
     <div className="container">
-      <h1 className="heading">Our Crops</h1>
+      <h1 className="heading text-white">{title}</h1>
       <Swiper
+        className="swiper_container"
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
         slidesPerView={"auto"}
+        scrollbar={{ draggable: true }}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
           depth: 100,
           modifier: 2.5,
         }}
+        onSlideChange={handleSlideChange}
         pagination={{ el: ".swiper-pagination", clickable: true }}
         navigation={{
           nextEl: ".swiper-button-next",
@@ -36,26 +45,22 @@ const Swipers = () => {
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container"
       >
-        <SwiperSlide>
-          {slider_images &&
-            slider_images.map((image, index) => (
-              <>
-                <img src={image} alt={image} key={index} />
-              </>
-            ))}
-        </SwiperSlide>
+        {slider_image &&
+          slider_image.map((item, index) => (
+            <SwiperSlide className="general-swiper-slide" id="general-swiper-slide" key={index}>
+              <img src={item.image} alt={item.title} />
+            </SwiperSlide>
+          ))}
         <div className="slider-controller">
           <div className="swiper-button-prev slider-arrow">
-            {/* <ion-icon name="arrow-back-outline"></ion-icon> */}
-            <h1 className="text-black text-2xl">left</h1>
+            <ion-icon name="arrow-back-outline"></ion-icon>
           </div>
           <div className="swiper-button-next slider-arrow">
-            {/* <ion-icon name="arrow-forward-outline"></ion-icon> */}
-            <h1 className="text-black text-2xl">right</h1>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
           </div>
           <div className="swiper-pagination"></div>
+          {/* <div className="text-white current-image-title">{currentImageTitle}</div> */}
         </div>
       </Swiper>
     </div>

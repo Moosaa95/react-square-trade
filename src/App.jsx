@@ -4,6 +4,8 @@ import { Farmers, Footer, Hero, Nabar, Services, Stats, Values } from "./compone
 import Announcement from "./components/annoucement/Accouncement";
 import Who from "./components/who-we-are/Who";
 import Swipers from "./components/swiper/Swiper";
+import { Crops } from "./constants";
+import Contact from "./components/Contact";
 
 
 const App = () => (
@@ -30,9 +32,10 @@ const App = () => (
         <Stats />
         <Farmers />
         <Services />
-        {/* <Values />   */}
+        <Values />  
         <Who />
-        {/* <Swipers /> */}
+        <Swipers title="Commodities" slider_image={Crops} />
+        <Contact />
         <Footer />
       </div>
 

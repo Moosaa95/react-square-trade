@@ -1,4 +1,4 @@
-import { facebook, instagram, linkedin, twitter,  star  } from "../assets";
+import { facebook, instagram, linkedin, twitter,  star, moringa, StoneFlower, Habiscus,  TigerNuts, Tin  } from "../assets";
 
 export const navLinks = [
   {
@@ -18,6 +18,32 @@ export const navLinks = [
     title: "Contact",
   },
 ];
+
+
+export const Crops = [
+  {
+    title:"Moringa",
+    image: moringa
+  },
+  {
+    title:"SunFlower",
+    image: StoneFlower
+  },
+  {
+    title:"Tin",
+    image: Tin
+  },
+  {
+    title:"TigerNuts",
+    image: TigerNuts
+  },
+  {
+    title:"Habiscus",
+    image: Habiscus
+  }
+]
+
+
 
 export const features = [
   {
