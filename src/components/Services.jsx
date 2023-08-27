@@ -46,7 +46,7 @@ const Services = () => {
   const transition = {duration:1, type:'spring'}
 
   return (
-    <div className="py-12">
+    <div className="py-12" id="services">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-[#fefefe] mb-8">
           Our Services
