@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {motion } from "framer-motion"
 const FeatureBox = ({ icon, title, description }) => {
   const [showDescription, setShowDescription] = useState(false);
 
@@ -6,25 +7,26 @@ const FeatureBox = ({ icon, title, description }) => {
     setShowDescription((prevState) => !prevState);
   };
 
+
   return (
     <div className="bg-gray-600 p-6 flex flex-col justify-start items-center rounded-lg shadow-md hover:shadow-lg transition duration-300">
-      <div className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full mb-4">
+      <div className="flex items-center justify-center w-12 h-12 bg-gray-50 rounded-full mb-4">
         {/* <img src={icon} alt={title} className="w-6 h-6 text-white" /> */}
         <ion-icon
           size="large"
           name={icon}
-          className={`text-[#76e6ea] hover:text-blue-600 w-6 h-6`}
+          className={`text-[#fefefe] hover:text-gray-600 w-6 h-6`}
         ></ion-icon>
       </div>
-      <h3 className="text-lg font-semibold mb-2 text-[#76e6ea]">{title}</h3>
+      <h3 className="text-lg font-semibold mb-2 text-[#fefefe]">{title}</h3>
       <button
-        className="text-[#76e6ea] hover:text-blue-600 mt-2 cursor-pointer transition duration-300"
+        className="text-[#fefefe] hover:text-gray-600 mt-2 cursor-pointer transition duration-300"
         onClick={toggleDescription}
       >
         <ion-icon
           size="large"
           name={showDescription ? "close-outline" : "add-outline"}
-          className={`text-[#76e6ea] hover:text-blue-600 ${
+          className={`text-[#fefefe] hover:text-gray-600 ${
             showDescription ? "rotate-45" : "rotate-0"
           }`}
         ></ion-icon>
@@ -41,52 +43,48 @@ const FeatureBox = ({ icon, title, description }) => {
 };
 
 const Services = () => {
+  const transition = {duration:1, type:'spring'}
+
   return (
     <div className="py-12">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-semibold text-center text-[#76e6ea] mb-8">
+        <h2 className="text-4xl font-bold text-[#fefefe] mb-8">
           Our Services
         </h2>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <motion.div className="grid grid-cols-1 gap-6 md:grid-cols-3"
+        initial={{ left: "25rem" }}
+        whileInView={{ left: "14rem" }}
+        transition={transition}
+        >
           <FeatureBox
-            icon={"bag-outline"} // Replace with your icon asset
-            title="Product Sourcing"
+            icon={"briefcase-outline"} // Replace with your icon asset
+            title="Trade Facilitation"
             data-aos="fade-up"
             data-aos-duration="1000"
-            description="We act as a reliable bridge between farmers/miners and potential buyers. Our team scouts and sources high-quality agricultural or mineral products from farmers/miners, ensuring adherence to international quality standards and certifications. We curate a diverse range of products to meet the specific demands of buyers, providing them with access to a wide variety of options."
-          />
-          <FeatureBox
-            icon={"globe-outline"} // Replace with your icon asset
-            title="Market Access and Expansion"
-            description="We connect farmers/miners with international buyers and help them gain access to new markets. By leveraging our extensive network of trade partners and distributors, we open doors to a global customer base, enabling farmers/miners to expand their reach and increase their revenue potential."
-          />
-          <FeatureBox
-            icon={"cube-outline"} // Replace with your icon asset
-            title="Logistics and Supply Chain Management"
-            description="Our export company takes care of the entire logistics and supply chain process. We handle the transportation, shipping, and documentation required for the smooth movement of goods from the point of origin to the buyers. Our expertise ensures efficient and timely delivery, minimizing any disruptions that could impact the trade process."
-          />
-          <FeatureBox
-            icon={"handshake-outline"} // Replace with your icon asset
-            title="Trade Facilitation"
-            description="We provide comprehensive trade facilitation services to middlemen, ensuring that they have access to reliable suppliers and manufacturers. Our company helps streamline their operations by offering efficient sourcing solutions, negotiating competitive pricing, and providing ongoing support throughout the trade process. We act as a trusted partner, enabling middlemen to meet the demands of their customers effectively."
+            description="At the core of our operations lies trade. We have a diverse portfolio of buyers spanning from four continents, each with distinct commodity needs. We streamline the entire process, from requisition and funding to seamless supply, ensuring the needs of buyers are met comprehensively."
           />
           <FeatureBox
             icon={"cash-outline"} // Replace with your icon asset
-            title="Investment Advisory"
-            description="For investors interested in the agricultural or mining sectors, we offer investment advisory services. Our team assists in identifying profitable ventures, conducting feasibility studies, and assessing potential risks and returns. We provide market insights, connect investors with suitable farming or mining projects, and support them in establishing partnerships or joint ventures."
+            title="Investment"
+            description="We extend investment avenues to both individuals and corporations, providing options for funding and commodity exports in exchange for shared profits."
           />
           <FeatureBox
-            icon={"shield-checkmark-outline"} // Replace with your icon asset
-            title="Risk Mitigation"
-            description="We prioritize risk mitigation throughout the trade process. Our company conducts thorough due diligence to ensure the credibility and reliability of farmers/miners, middlemen, and investment opportunities. We also assist in compliance with relevant trade regulations, certifications, and documentation to minimize potential risks associated with international trade."
+            icon={"document-text-outline"} // Replace with your icon asset
+            title="Commodity Data "
+            description="We provide commodity data for the sub-Saharan, supported through our expansive network of farmers, merchants and aggregators backed by historical influence of data production, logistics and market forces."
           />
           <FeatureBox
-            icon={"analytics-outline"} // Replace with your icon asset
-            title="Market Intelligence"
-            description="We keep our clients informed about the latest market trends, pricing dynamics, and trade regulations. Our team provides valuable market intelligence reports, allowing farmers/miners, middlemen, and investors to make informed decisions and capitalize on emerging opportunities."
+            icon={"people-outline"} // Replace with your icon asset
+            title="Efficient Aggregator Network"
+            description="The pillar of the commodity sourcing network are the local producers, sourcing agents and logistics partners. We ensure the eco-system of commodity sourcing provides the required quality products through our participation."
+          />
+          <FeatureBox
+            icon={"school-outline"} // Replace with your icon asset
+            title="Commodity Sourcing Enlightenment Programmes"
+            description="The more education on quality commodity production the more prosperity for ProTrade, we engage local farmers, sourcing agents and other players in ensuring appropriate knowledge dissemination."
           />
           {/* You can add more FeatureBox components here */}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

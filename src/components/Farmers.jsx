@@ -3,6 +3,9 @@ import { features } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
 import "./stlye.css";
+import Farmer from "../assets/img/square-trade-farmer.jpg";
+import MiddleMen from "../assets/img/square-trade-middleman.jpg";
+import Investors from "../assets/img/square-trade-investos.jpg";
 
 const FeatureCard = ({ icon, title, content, index }) => {
   const [expanded, setExpanded] = useState(false);
@@ -20,10 +23,14 @@ const FeatureCard = ({ icon, title, content, index }) => {
       <div
         className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
       >
-        <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
+        <img
+          src={icon}
+          alt="star"
+          className="w-[50%] h-[50%] object-contain "
+        />
       </div>
       <div className="flex-1 flex flex-col ml-3">
-        <h4 className="font-poppins font-semibold text-[#76e6ea] text-[18px] leading-[23.4px] mb-1">
+        <h4 className="font-poppins font-bold text-[#fefefe] text-[18px] leading-[23.4px] mb-1">
           {title}
         </h4>
         <p
@@ -35,7 +42,7 @@ const FeatureCard = ({ icon, title, content, index }) => {
         </p>
         {content.length > 80 && (
           <button
-            className="text-[#76e6ea] mt-2 font-medium hover:underline"
+            className="text-[#fefefe] mt-2 font-medium hover:underline"
             onClick={toggleExpand}
           >
             {expanded ? "Read Less" : "Read More"}
@@ -49,25 +56,35 @@ const FeatureCard = ({ icon, title, content, index }) => {
 const Farmers = () => (
   <section id="what-we-do" className={layout.section}>
     <div className={layout.sectionInfo}>
+      <div className="w-full mb-10 flex flex-col justify-center mx-auto">
+        <h1 className="text-white text-[2.5rem] font-bold">Our Clientele</h1>
+        <p className="text-white text-[1rem]">
+          Whether clients are farmers, middlemen, or investors, we forge strong
+          collaborative bonds. We commit to exceptional service, reliable
+          sourcing, and tailored logistics. Transparency, fair practices, and
+          sustainability underpin us, fostering client success in the evolving
+          global market.
+        </p>
+      </div>
       <div class="w-full mx-auto my-8">
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 grid-rows-auto gap-4 md:gap-6 lg:gap-8">
           <div class="col-span-2 md:col-span-4 lg:col-span-6 row-span-3 md:row-span-4">
             <img
-              src="https://square-olive.vercel.app/assets/img/square-trade-middleman.jpg"
+              src={MiddleMen}
               alt="Gallery image 3"
               class="w-full h-full object-cover"
             />
           </div>
           <div class="col-span-2 md:col-span-2 lg:col-span-4 row-span-2 md:row-span-3">
             <img
-              src="https://square-olive.vercel.app/assets/img/squate-trade-farmer.jpg"
+              src={Farmer}
               alt="Gallery image 4"
               class="w-full h-full object-cover"
             />
           </div>
           <div class="col-span-2 md:col-span-2 lg:col-span-4 row-span-2 md:row-span-3">
             <img
-              src="https://square-olive.vercel.app/assets/img/square-trade-investos.jpg"
+              src={Investors}
               alt="Gallery image 5"
               class="w-full h-full object-cover"
             />

@@ -1,6 +1,11 @@
 import styles from "../style";
-import { discount, robot } from "../assets";
 import GetStarted from "./GetStarted";
+import Cycle from "./cycle/Cycle";
+import moringa from "../assets/img/square-trade-moringa.jpg"
+import Tin from "../assets/img/Square-trade-tin.jpg"
+import TigerNuts from "../assets/img/square-trade-tiger-nuts.jpeg"
+import StoneFlower from "../assets/img/square-trade-stone-flower.jpg"
+import Habiscus from "../assets/img/square-trade-dried-habiscus.jpg"
 
 const Hero = () => {
   return (
@@ -22,7 +27,14 @@ const Hero = () => {
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
             Welcome to <br className="sm:block hidden" />{" "}
-            <span className="text-gradient">Square Trade</span>{" "}
+            <span className="text-6xl font-bold bg-gradient-to-r from-black to-white bg-clip-text"
+            style={{
+              backgroundImage: "linear-gradient(to right, gray, white)",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              color: "transparent"
+            }}
+            >Pro Trade</span>{" "}
           </h1>
           {/* <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
@@ -32,50 +44,17 @@ const Hero = () => {
         {/* <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
           Payment Method.
         </h1> */}
+        <h2 className="font-poppins font-semibold ss:text-[40px] text-[34px] text-white ss:leading-[60.8px] leading-[55px]">Sourcing Hub for Commodities</h2>
+
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Are you a passionate farmer or skilled miner looking to trade
-          exceptional products? Maybe you're a savvy entrepreneur seeking a
-          cutting-edge platform for business operations. Look no further, your
-          search ends here with us.
+        We facilitate the dependable sourcing of agricultural and mineral resource commodities for interested entities.
         </p>
       </div>
 
       <div
-        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative `}
+        className={`flex-1 flex md:my-0 my-10 relative `}
       >
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-          <img
-            src="https://square-olive.vercel.app/assets/img/square-trade-Sisal-Agave-Plant-fibre.jpg"
-            alt="billing"
-            className="w-full h-full relative z-[5]"
-          />
-          <img
-            src="https://square-olive.vercel.app/assets/img/square-trade-sesame.jpg"
-            alt="flower"
-            className="w-full h-full relative z-[5]"
-          />
-          <img
-            src="https://square-olive.vercel.app/assets/img/squate-trade-dried-mangos.webp"
-            alt="billing"
-            className="w-full h-full relative z-[5]"
-          />
-          <img
-            src="https://square-olive.vercel.app/assets/img/square-trade-Soya-beans.jpg"
-            alt="billing"
-            className="w-full h-full relative z-[5]"
-          />
-          <img
-            src="https://square-olive.vercel.app/assets/img/square-trade-Zircon-Sand.webp"
-            alt="billing"
-            className="w-full h-full relative z-[5]"
-          />
-          <img
-            src="https://square-olive.vercel.app/assets/img/square-trade-moringa.jpg"
-            alt="billing"
-            className="w-full h-full relative z-[5]"
-          />
-          {/* Add more images here */}
-        </div>
+        <Cycle image1={moringa}  image2={Tin} image3={TigerNuts} image4={StoneFlower} image5={Habiscus} />
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
@@ -84,9 +63,7 @@ const Hero = () => {
         {/* gradient end */}
       </div>
 
-      {/* <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted />
-      </div> */}
+      
     </section>
   );
 };

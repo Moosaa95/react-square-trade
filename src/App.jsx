@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import styles from "./style";
 import { Farmers, Footer, Hero, Nabar, Services, Stats, Values } from "./components";
 import Announcement from "./components/annoucement/Accouncement";
+import Who from "./components/who-we-are/Who";
+import Swipers from "./components/swiper/Swiper";
 
 
 const App = () => (
@@ -28,7 +30,9 @@ const App = () => (
         <Stats />
         <Farmers />
         <Services />
-        <Values />  
+        {/* <Values />   */}
+        <Who />
+        {/* <Swipers /> */}
         <Footer />
       </div>
 

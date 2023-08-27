@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { facebook, instagram, linkedin, twitter,  star  } from "../assets";
 
 export const navLinks = [
   {
@@ -11,7 +11,7 @@ export const navLinks = [
   },
   {
     id: "what-we-do",
-    title: "What we Wdo",
+    title: "What we do",
   },
   {
     id: "contact",
@@ -23,52 +23,52 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Empowering Farmers and Miners for Global Trade Success",
+    title: "Farmers/Miners",
     content:
-      "Unlocking the treasures of high-quality agricultural or mineral products, we act as a gateway between visionary farmers/miners and the global market. With us by their side, they gain access to international buyers, expanding their horizons like never before. We're dedicated to finding the perfect export opportunities, securing fair prices, and ensuring compliance with stringent quality standards and certifications. By partnering with us, farmers/miners ignite new markets and ignite sustainable growth for their businesses.",
+      "We connect visionary farmers/miners with global markets, facilitating access to international buyers. Our dedication includes finding export opportunities, securing fair prices, ensuring quality standards, and driving sustainable growth.",
   },
   {
     id: "feature-2",
     icon: star,
-    title: "Empowering Middlemen as Trade Facilitators",
+    title: "Middlemen",
     content:
-      "In the pulsating world of trade, middlemen are the beating heart that connects producers and buyers. At Square Trade, we join forces with these masters of connection, providing an extensive network of reliable suppliers and manufacturers. Through our collaboration, middlemen unleash the power of streamlined operations, enhanced sourcing capabilities, and seamless transactions. Our diverse product range, competitive pricing, and dependable logistics support empower them to meet and exceed the demands of their esteemed clientele.",
+      "In the dynamic trade realm, middlemen link producers and buyers. At ProTrade, we amplify this connection, offering a vast network of trusted suppliers. Together, we enable streamlined operations, better sourcing, and smooth transactions. With diverse products, competitive prices, and reliable logistics, middlemen can exceed client demands.",
   },
   {
     id: "feature-3",
     icon: star,
-    title: "Guiding Visionary Investors towards Profitable Ventures",
+    title: "Investors",
     content:
-      "Venture into the realm of untapped potential in the agricultural or mining sectors, and you'll find our unwavering support for visionary investors. We become their trusted advisors, guiding them towards profitable ventures through meticulous feasibility studies and strategic connections with exceptional farming or mining projects. Armed with comprehensive market insights and risk assessments, we help investors make informed decisions that maximize their returns. Together, we contribute to sustainable development in these vital sectors.",
+      "Explore untapped Agri/mining potential with our support. As trusted advisors, we connect visionary investors to profitable projects through studies and strategic links. Backed by insights and risk assessments, we drive informed decisions for maximum returns, fostering sectoral sustainability.",
   },
 ];
 
-export const feedback = [
-  {
-    id: "feedback-1",
-    content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
-    img: people01,
-  },
-  {
-    id: "feedback-2",
-    content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
-    img: people02,
-  },
-  {
-    id: "feedback-3",
-    content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: people03,
-  },
-];
+// export const feedback = [
+//   {
+//     id: "feedback-1",
+//     content:
+//       "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+//     name: "Herman Jensen",
+//     title: "Founder & Leader",
+//     img: people01,
+//   },
+//   {
+//     id: "feedback-2",
+//     content:
+//       "Money makes your life easier. If you're lucky to have it, you're lucky.",
+//     name: "Steve Mark",
+//     title: "Founder & Leader",
+//     img: people02,
+//   },
+//   {
+//     id: "feedback-3",
+//     content:
+//       "It is usually people in the money business, finance, and international trade that are really rich.",
+//     name: "Kenn Gallagher",
+//     title: "Founder & Leader",
+//     img: people03,
+//   },
+// ];
 
 export const stats = [
   {
@@ -174,21 +174,21 @@ export const socialMedia = [
   },
 ];
 
-export const clients = [
-  {
-    id: "client-1",
-    logo: airbnb,
-  },
-  {
-    id: "client-2",
-    logo: binance,
-  },
-  {
-    id: "client-3",
-    logo: coinbase,
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
-  },
-];
+// export const clients = [
+//   {
+//     id: "client-1",
+//     logo: airbnb,
+//   },
+//   {
+//     id: "client-2",
+//     logo: binance,
+//   },
+//   {
+//     id: "client-3",
+//     logo: coinbase,
+//   },
+//   {
+//     id: "client-4",
+//     logo: dropbox,
+//   },
+// ];
