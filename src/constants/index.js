@@ -56,9 +56,9 @@ export const features = [
   {
     id: "feature-2",
     icon: star,
-    title: "Middlemen",
+    title: "Aggregators",
     content:
-      "In the dynamic trade realm, middlemen link producers and buyers. At ProTrade, we amplify this connection, offering a vast network of trusted suppliers. Together, we enable streamlined operations, better sourcing, and smooth transactions. With diverse products, competitive prices, and reliable logistics, middlemen can exceed client demands.",
+      "In the dynamic trade realm, aggregators link producers and buyers. At ProTrade, we amplify this connection, offering a vast network of trusted suppliers. Together, we enable streamlined operations, better sourcing, and smooth transactions. With diverse products, competitive prices, and reliable logistics, aggregators can exceed client demands.",
   },
   {
     id: "feature-3",
@@ -104,7 +104,7 @@ export const stats = [
   },
   {
     id: "stats-2",
-    title: "Middle Men",
+    title: "Aggregators",
     value: "30+",
   },
   {
