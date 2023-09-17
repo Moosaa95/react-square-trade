@@ -39,7 +39,7 @@ const Hero = () => {
         </h1> */}
         <h2 className="font-poppins font-semibold ss:text-[40px] text-[34px] text-white ss:leading-[60.8px] leading-[55px]">Sourcing Hub for Commodities</h2>
 
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+        <p className={` font-normal text-dimWhite text-[18px] leading-[30.8px] text-justify max-w-[470px] mt-5`}>
         We facilitate the dependable sourcing of agricultural and mineral resource commodities for interested entities.
         </p>
       </div>

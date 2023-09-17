@@ -26,7 +26,7 @@ const FeatureCard = ({ icon, title, content, index }) => {
         <img
           src={icon}
           alt="star"
-          className="w-[50%] h-[50%] object-contain "
+          className="w-[50%] h-[50%] object-contain"
         />
       </div>
       <div className="flex-1 flex flex-col ml-3">
@@ -58,7 +58,7 @@ const Farmers = () => (
     <div className={layout.sectionInfo}>
       <div className="w-full mb-10 flex flex-col justify-center mx-auto">
         <h1 className="text-white text-[2.5rem] font-bold">Our Clientele</h1>
-        <p className="text-white text-[1rem]">
+        <p className="text-white text-[1rem] text-justify">
           Whether clients are farmers, middlemen, or investors, we forge strong
           collaborative bonds. We commit to exceptional service, reliable
           sourcing, and tailored logistics. Transparency, fair practices, and

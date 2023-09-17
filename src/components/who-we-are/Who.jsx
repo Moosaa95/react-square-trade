@@ -22,7 +22,7 @@ const Who = () => {
       <div className="awesome">
         {/* dark mode */}
         <span className="text-white"  >Who we are</span>
-        <span className="text-white">
+        <span className="text-white text-justify">
           ProTrade is a conglomerate of partners united by a shared objective:
           optimizing commodity trade efficiency. With a rich history of
           establishing a sustainable ecosystem, ProTrade offers participants

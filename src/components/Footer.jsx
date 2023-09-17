@@ -11,7 +11,7 @@ const Footer = () => (
           alt="hoobank"
           className="w-[266px] h-[150pxpx] object-contain"
         />
-        <p className={`${styles.paragraph} mt-0 max-w-[312px]`}>
+        <p className={`text-justify font-normal text-dimWhite text-[18px] leading-[30.8px] mt-0 max-w-[312px]`}>
           We facilitate the dependable sourcing of agricultural and mineral
           resource commodities for interested entities.
         </p>

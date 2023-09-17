@@ -13,6 +13,7 @@ import Tin from "./img/Square-trade-tin.jpg";
 import TigerNuts from "./img/square-trade-tiger-nuts.jpeg";
 import StoneFlower from "./img/square-trade-stone-flower.jpg";
 import Habiscus from "./img/square-trade-dried-habiscus.jpg";
+import ProTradeSvg from "./img/Pro-Trade-logo.svg";
 
 export {
   protradeLogo,
@@ -30,4 +31,5 @@ export {
   TigerNuts,
   Habiscus,
   StoneFlower,
+  ProTradeSvg,
 };
