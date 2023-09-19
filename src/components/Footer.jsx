@@ -1,5 +1,5 @@
 import styles from "../style";
-import {  protrade } from "../assets";
+import {  ProTradeWhite } from "../assets";
 import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => (
@@ -7,7 +7,7 @@ const Footer = () => (
     <div className={`${styles.flexStart} md:flex-row flex-col mb-1 w-full`}>
       <div className="flex-[1] flex flex-col justify-start mr-10">
         <img
-          src={protrade}
+          src={ProTradeWhite}
           alt="hoobank"
           className="w-[266px] h-[150pxpx] object-contain"
         />

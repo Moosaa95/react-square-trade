@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { close,  menu, protrade } from "../assets";
+import { close,  menu, protrade, ProTradeWhite } from "../assets";
 import { navLinks } from "../constants";
 
 const Nabar = () => {
@@ -9,7 +9,7 @@ const Nabar = () => {
   
   return (
     <nav className="w-full flex py-0  justify-between items-center navbar">
-      <img src={protrade} alt="" className="w-[124px] h-[132px]" />
+      <img src={ProTradeWhite} alt="" className="w-[164px] h-[162px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
