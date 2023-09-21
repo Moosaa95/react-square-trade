@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { features } from "../constants";
 import styles, { layout } from "../style";
-import Button from "./Button";
 import "./stlye.css";
 import Farmer from "../assets/img/square-trade-farmer.jpg";
 import MiddleMen from "../assets/img/square-trade-middleman.jpg";

@@ -9,9 +9,9 @@ const FeatureBox = ({ icon, title, description }) => {
 
 
   return (
-    <div className="bg-gray-600 p-6 flex flex-col justify-start items-center rounded-lg shadow-md hover:shadow-lg transition duration-300">
-      <div className="flex items-center justify-center w-12 h-12 bg-gray-50 rounded-full mb-4">
-        {/* <img src={icon} alt={title} className="w-6 h-6 text-white" /> */}
+    <div className="flex flex-col items-center justify-start p-6 transition duration-300 bg-gray-600 rounded-lg shadow-md hover:shadow-lg">
+      <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-gray-50">
+        
         <ion-icon
           size="large"
           name={icon}
@@ -57,29 +57,29 @@ const Services = () => {
         transition={transition}
         >
           <FeatureBox
-            icon={"briefcase-outline"} // Replace with your icon asset
+            icon={"briefcase-outline"} 
             title="Trade Facilitation"
             data-aos="fade-up"
             data-aos-duration="1000"
             description="At the core of our operations lies trade. We have a diverse portfolio of buyers spanning from four continents, each with distinct commodity needs. We streamline the entire process, from requisition and funding to seamless supply, ensuring the needs of buyers are met comprehensively."
           />
           <FeatureBox
-            icon={"cash-outline"} // Replace with your icon asset
+            icon={"cash-outline"} 
             title="Investment"
             description="We extend investment avenues to both individuals and corporations, providing options for funding and commodity exports in exchange for shared profits."
           />
           <FeatureBox
-            icon={"document-text-outline"} // Replace with your icon asset
+            icon={"document-text-outline"} 
             title="Commodity Data "
             description="We provide commodity data for the sub-Saharan, supported through our expansive network of farmers, merchants and aggregators backed by historical influence of data production, logistics and market forces."
           />
           <FeatureBox
-            icon={"people-outline"} // Replace with your icon asset
+            icon={"people-outline"} 
             title="Efficient Aggregator Network"
             description="The pillar of the commodity sourcing network are the local producers, sourcing agents and logistics partners. We ensure the eco-system of commodity sourcing provides the required quality products through our participation."
           />
           <FeatureBox
-            icon={"school-outline"} // Replace with your icon asset
+            icon={"school-outline"} 
             title="Commodity Sourcing Enlightenment Programmes"
             description="The more education on quality commodity production the more prosperity for ProTrade, we engage local farmers, sourcing agents and other players in ensuring appropriate knowledge dissemination."
           />

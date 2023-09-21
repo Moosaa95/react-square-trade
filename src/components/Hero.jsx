@@ -1,5 +1,4 @@
 import styles from "../style";
-import GetStarted from "./GetStarted";
 import Cycle from "./cycle/Cycle";
 import moringa from "../assets/img/square-trade-moringa.jpg"
 import Tin from "../assets/img/Square-trade-tin.jpg"
@@ -17,9 +16,9 @@ const Hero = () => {
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
 
-        <div className="flex flex-row justify-between items-center w-full">
+        <div className="flex flex-row items-center justify-between w-full">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
-            Welcome to <br className="sm:block hidden" />{" "}
+            Welcome to <br className="hidden sm:block" />{" "}
             <span className="text-6xl font-bold bg-gradient-to-r from-black to-white bg-clip-text"
             style={{
               backgroundImage: "linear-gradient(to right, gray, white)",
@@ -29,14 +28,8 @@ const Hero = () => {
             }}
             >Pro Trade</span>{" "}
           </h1>
-          {/* <div className="ss:flex hidden md:mr-4 mr-0">
-            <GetStarted />
-          </div> */}
         </div>
 
-        {/* <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-          Payment Method.
-        </h1> */}
         <h2 className="font-poppins font-semibold ss:text-[40px] text-[34px] text-white ss:leading-[60.8px] leading-[55px]">Sourcing Hub for Commodities</h2>
 
         <p className={` font-normal text-dimWhite text-[18px] leading-[30.8px] text-justify max-w-[470px] mt-5`}>

@@ -1,9 +1,6 @@
 import React, { useContext } from "react";
 import "./Who.css";
 import Card from "./Card";
-// import HeartEmoji from "../../img/heartemoji.png";
-// import Glasses from "../../img/glasses.png";
-// import Humble from "../../img/";
 
 import { motion } from "framer-motion";
 
@@ -22,7 +19,7 @@ const Who = () => {
       <div className="awesome">
         {/* dark mode */}
         <span className="text-white"  >Who we are</span>
-        <span className="text-white text-justify">
+        <span className="text-justify text-white">
           ProTrade is a conglomerate of partners united by a shared objective:
           optimizing commodity trade efficiency. With a rich history of
           establishing a sustainable ecosystem, ProTrade offers participants

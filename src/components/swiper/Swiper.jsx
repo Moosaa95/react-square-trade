@@ -22,7 +22,7 @@ const Swipers = ({ title, slider_image }) => {
       };
   return (
     <div className="container">
-      <h1 className="heading text-white">{title}</h1>
+      <h1 className="text-white heading">{title}</h1>
       <Swiper
         className="swiper_container"
         effect={"coverflow"}
@@ -60,7 +60,6 @@ const Swipers = ({ title, slider_image }) => {
             <ion-icon name="arrow-forward-outline"></ion-icon>
           </div>
           <div className="swiper-pagination"></div>
-          {/* <div className="text-white current-image-title">{currentImageTitle}</div> */}
         </div>
       </Swiper>
     </div>

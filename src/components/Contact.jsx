@@ -53,10 +53,7 @@ const Contact = () => {
               ProTrade Commodities <br />Plot 184, Uche Secondus Crescent, Wuye,
               Abuja.
             </p>
-            {/* <p className="mb-2 text-gray-700">
-              <span className="mr-2 font-semibold text-gray-900">Phone:</span>
-              456-7890
-            </p> */}
+            
             <p className="mb-2 text-gray-700">
               <span className="mr-2 font-semibold text-gray-900">Email:</span>
               contact@protradeco.com

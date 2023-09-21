@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { close,  menu, protrade, ProTradeWhite } from "../assets";
+import { close,  menu,  ProTradeWhite } from "../assets";
 import { navLinks } from "../constants";
 
 const Nabar = () => {
@@ -8,10 +8,10 @@ const Nabar = () => {
 
   
   return (
-    <nav className="w-full flex py-0  justify-between items-center navbar">
+    <nav className="flex items-center justify-between w-full py-0 navbar">
       <img src={ProTradeWhite} alt="" className="w-[164px] h-[162px]" />
 
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+      <ul className="items-center justify-end flex-1 hidden list-none sm:flex">
         {navLinks.map((nav, index) => (
           <li
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
@@ -24,7 +24,7 @@ const Nabar = () => {
           </li>
         ))}
       </ul>
-      <div className="sm:hidden flex flex-1  justify-end items-center">
+      <div className="flex items-center justify-end flex-1 sm:hidden">
         <img
           src={toggle ? close : menu}
           alt="menu"
@@ -36,7 +36,7 @@ const Nabar = () => {
             !toggle ? "hidden" : "flex"
           } p-6 bg-black-gradient absolute top-[120px] right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
-          <ul className="list-none flex  justify-end items-start flex-1 flex-col">
+          <ul className="flex flex-col items-start justify-end flex-1 list-none">
             {navLinks.map((nav, index) => (
               <li
                 className={`font-poppins font-normal cursor-pointer text-[16px] ${
