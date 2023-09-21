@@ -130,10 +130,7 @@ export const footerLinks = [
         name: "Create an Account",
         link: "",
       },
-      {
-        name: "Explore",
-        link: "",
-      },
+      
       
     ],
   },
@@ -146,10 +143,6 @@ export const footerLinks = [
       },
       {
         name: "Partners",
-        link: ""
-      },
-      {
-        name: "Suggestions",
         link: ""
       },
       {
