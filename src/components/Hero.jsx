@@ -1,10 +1,10 @@
 import styles from "../style";
 import Cycle from "./cycle/Cycle";
-import moringa from "../assets/img/square-trade-moringa.jpg"
-import Tin from "../assets/img/Square-trade-tin.jpg"
-import TigerNuts from "../assets/img/square-trade-tiger-nuts.jpeg"
-import StoneFlower from "../assets/img/square-trade-stone-flower.jpg"
-import Habiscus from "../assets/img/square-trade-dried-habiscus.jpg"
+import moringa from "../assets/img/pro-trade-moringa.jpg"
+import Tin from "../assets/img/pro-trade-tin.jpg"
+import TigerNuts from "../assets/img/pro-trade-tiger-nuts.jpeg"
+import StoneFlower from "../assets/img/pro-trade-stone-flower.jpg"
+import Habiscus from "../assets/img/pro-trade-dried-habiscus.jpg"
 
 const Hero = () => {
   return (

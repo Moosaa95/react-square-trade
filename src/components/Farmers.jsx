@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { features } from "../constants";
 import styles, { layout } from "../style";
-import "./stlye.css";
-import Farmer from "../assets/img/square-trade-farmer.jpg";
-import MiddleMen from "../assets/img/square-trade-middleman.jpg";
-import Investors from "../assets/img/square-trade-investos.jpg";
+import Farmer from "../assets/img/pro-trade-farmer.jpg";
+import MiddleMen from "../assets/img/pro-trade-middleman.jpg";
+import Investors from "../assets/img/pro-trade-investos.jpg";
 
 const FeatureCard = ({ icon, title, content, index }) => {
   const [expanded, setExpanded] = useState(false);

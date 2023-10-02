@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./style";
 import { Farmers, Footer, Hero, Nabar, Services, Stats, Values } from "./components";
 import Announcement from "./components/annoucement/Accouncement";

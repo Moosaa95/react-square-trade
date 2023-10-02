@@ -15,19 +15,19 @@ const Cycle = ({ image1, image2, image3, image4, image5 }) => {
         
         className="w-mainCircle">
           <div className="w-secCircle">
-            <img src={image1} alt="" />
+            <img src={image1} alt="" loading="lazy" />
           </div>
           <div className="w-secCircle">
-            <img src={image2} alt="" />
+            <img src={image2} alt="" loading="lazy"  />
           </div>
           <div className="w-secCircle">
-            <img src={image3} alt="" />
+            <img src={image3} alt="" loading="lazy"  />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={image4} alt="" />
+            <img src={image4} alt="" loading="lazy"  />
           </div>
           <div className="w-secCircle">
-            <img src={image5} alt="" />
+            <img src={image5} alt="" loading="lazy"  />
           </div>
         </motion.div>
         {/* background Circles */}
